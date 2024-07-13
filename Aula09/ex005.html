@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulando DOM</title>
+    <style>
+      body {
+        background-color: rgb(16, 105, 105);
+        font: normal 1em Arial;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado.</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div>Clique em mim</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[1] //pega o primeiro parágrafo do texto, indice zero
+        /*window.document.write('Está escrito: ' + p1.innerText)*/
+        p1.style.color = 'pink'
+    </script>
+  </body>
+</html>
