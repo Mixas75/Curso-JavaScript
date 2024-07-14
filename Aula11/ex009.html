@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            background-color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolha seu pais de nascimento:</h1>
+    <form>
+        <select name="pais" id="pais">
+            <option value="Brasil">Brasil</option>
+            <option value="EUA">EUA</option>
+            <option value="Japão">Japão</option>
+            <option value="China">China</option>
+        </select>
+        <button type="button" onclick="checar()">Checar</button>
+    </form>
+    <p id="result"></p>
+<script>
+function checar(){
+    var pais = document.getElementById("pais").value;
+    if(pais == "Brasil"){
+        document.getElementById("result").innerHTML = "Você é brasileiro";
+        }else if(pais == "EUA"){
+            document.getElementById("result").innerHTML = "Você é americano";
+            }else if(pais == "Japão"){
+                document.getElementById("result").innerHTML = "Você é japonês";
+                }else if(pais == "China"){
+                    document.getElementById("result").innerHTML = "Você é chinês";
+                    }else{
+                        document.getElementById("result").innerHTML = "Seu país não consta na lista";
+}
+
+}
+</script>
+</body>
+</html>
