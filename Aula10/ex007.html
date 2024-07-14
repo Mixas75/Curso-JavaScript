@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulando DOM</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Somando números</h1>
+    <p>Escolha dois números e veja o resultado da soma</p>
+    <input type="number" name="nbr1" id="nbr1" />
+    <input type="number" name="nbr2" id="nbr2" />
+    <button type="button" onclick="somar()">Somar</button>
+    <button type="reset" onclick="limpar()">Limpar</button>
+    <p id="resultado">A soma é:</p>
+    <script>
+      function somar() {
+          let n1 = Number(document.getElementById("nbr1").value);
+          let n2 = Number(document.getElementById("nbr2").value);
+          let resultado = (document.getElementById('resultado'));
+          resultado.innerHTML = `A soma de ${n1} e ${n2} é: <strong>${n1 + n2}</strong>`;
+      }
+      function limpar() {
+        let n1 = document.getElementById("nbr1").value = "";
+        let n2 = document.getElementById("nbr2").value = "";
+        let resultado = document.getElementById('resultado').innerHTML = "A soma é: ";
+      }
+    </script>
+  </body>
+</html>
