@@ -16,6 +16,9 @@ section{
     color: black;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.42);
 }
+div{
+    margin: 8PX;
+}
 footer{
     text-align: center;
     color: white;
