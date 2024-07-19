@@ -11,8 +11,9 @@ while(cont <= 6){
     cont++
 }*/
 
-let cont = 1;
+/*let cont = 1;
 do {
     console.log(`Passo ${cont}`)
     cont++
 } while(cont <= 7)
+ */
