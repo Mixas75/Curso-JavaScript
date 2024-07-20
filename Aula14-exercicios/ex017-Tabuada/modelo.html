@@ -8,10 +8,17 @@
   </head>
   <body>
     <header>
-      <h1>Título</h1>
+      <h1>Tabuada</h1>
       <section>
-        <div>div1</div>
-        <div>div2</div>
+        <div>
+          <label for="numero">Número:</label>
+          <input type="number" id="num" name="numero" placeholder="Digite um número" />
+          <button type="button" onclick="tabuada()">Gerar Tabuada</button>
+        </div>
+        <div>
+          <p>Resultado</p>
+          <select name="resultado" id="result"></select>
+        </div>
       </section>
       
     </header>
