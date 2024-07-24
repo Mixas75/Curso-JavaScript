@@ -26,6 +26,12 @@ section{
 #entrada{
     width: 50px;
 }
+#btnres {
+    margin: 10px 0;
+}
+#limpar{
+    margin: 10px 0;
+}
 footer{
     text-align: center;
     color: white;
